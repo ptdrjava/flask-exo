@@ -15,15 +15,15 @@ def hello():
 def produits():
     return jsonify(data)
 
-# @app.route('/api/v1/products/<id>')
-# def produit_by_id(id):
-#     result = ""
-#     for var in data:
-#         id_in_data=var["id"]
-#         if id_in_data == int(id):
-#             result = var
-#             break
-#     if result == "":
-#         abort(404)
+@app.route('/api/v1/products/<id>')
+def produit_by_id(id):
+    result = ""
+    for var in data:
+        id_in_data=var["id"]
+        if id_in_data == int(id):
+            result = var
+            break
+    if result == "":
+        abort(404)
     
-#     return jsonify(result)
+    return jsonify(result)
