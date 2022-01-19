@@ -24,7 +24,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv install --dev
-        pip install overlap
     - name: Test with nose
       run: |
         pipenv run nosetests

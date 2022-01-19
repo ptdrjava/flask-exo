@@ -1,6 +1,6 @@
 # wsgi.py
 # pylint: disable=missing-docstring
-from asyncio.windows_events import NULL
+# from asyncio.windows_events import NULL
 from flask import Flask, jsonify, abort
 
 app = Flask(__name__)
