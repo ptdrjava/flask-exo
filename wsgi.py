@@ -11,9 +11,9 @@ data = [{"id":1,"name":"Skello"},{"id":2,"name":"Socialive.tv"},{"id":3,"name":"
 def hello():
     return "Hello World! modif"
 
-# @app.route('/api/v1/products')
-# def produits():
-#     return jsonify(data)
+@app.route('/api/v1/products')
+def produits():
+    return jsonify(data)
 
 # @app.route('/api/v1/products/<id>')
 # def produit_by_id(id):
