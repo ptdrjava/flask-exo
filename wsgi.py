@@ -8,6 +8,6 @@ app = Flask(__name__)
 def hello():
     return "Hello World! modif"
 
-@app.route('/api/v1/produits')
+@app.route('/api/v1/products')
 def produits():
-    return jsonify(PRODUITS = {1:{"id":1,"name":"Skello"},2:{"id":2,"name":"Socialive.tv"}})
+    return jsonify([{"id":1,"name":"Skello"},{"id":2,"name":"Socialive.tv"},{"id":3,"name":"sup"}])
